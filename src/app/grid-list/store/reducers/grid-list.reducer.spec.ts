@@ -1,4 +1,4 @@
-import { reducer, initialState } from './grid-list.reducer';
+import { reducer, initialState } from 'src/app/grid-list/store/reducers/grid-list.reducer';
 
 describe('GridList Reducer', () => {
   describe('an unknown action', () => {

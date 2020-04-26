@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { provideMockActions } from '@ngrx/effects/testing';
 import { Observable } from 'rxjs';
 
-import { GridListEffects } from './grid-list.effects';
+import { GridListEffects } from 'src/app/grid-list/store/effects/grid-list.effects';
 
 describe('GridListEffects', () => {
   let actions$: Observable<any>;

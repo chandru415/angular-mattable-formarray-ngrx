@@ -3,7 +3,7 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, map, concatMap } from 'rxjs/operators';
 import { EMPTY, of } from 'rxjs';
 
-import * as GridListActions from '../actions/grid-list.actions';
+import * as GridListActions from 'src/app/grid-list/store/actions/grid-list.actions';
 
 
 
