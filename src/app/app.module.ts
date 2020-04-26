@@ -20,9 +20,8 @@ import { reducers, metaReducers } from './store/reducers';
     AppRoutingModule,
     BrowserAnimationsModule,
     StoreModule.forRoot(reducers, { metaReducers, runtimeChecks: { strictStateImmutability: true, strictActionImmutability: true } }),
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([AppEffects]),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
-    EffectsModule.forFeature([AppEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
