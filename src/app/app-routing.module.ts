@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', loadChildren: () => import('src/app/grid-list/grid-list.module').then(m => m.GridListModule) }
+  // { path: '', loadChildren: () => import('src/app/grid-list/grid-list.module').then(m => m.GridListModule) }
 ];
 
 @NgModule({
