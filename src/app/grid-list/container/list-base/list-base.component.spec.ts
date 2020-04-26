@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListBaseComponent } from './list-base.component';
+import { ListBaseComponent } from 'src/app/grid-list/container/list-base/list-base.component';
 
 describe('ListBaseComponent', () => {
   let component: ListBaseComponent;
