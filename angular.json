@@ -129,6 +129,7 @@
   },
   "defaultProject": "angular-mattable-formarray-ngrx",
   "cli": {
-    "analytics": "730188b9-b5ce-4b38-a449-f837341c7a60"
+    "defaultCollection": "@ngrx/schematics",
+    "analytics": "2d83e66e-ca0e-4552-8b85-509441aabbde"
   }
 }
