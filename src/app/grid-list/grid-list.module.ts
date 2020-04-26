@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListBaseComponent } from './container/list-base/list-base.component';
-import { ListViewComponent } from './presentationals/list-view/list-view.component';
+import { ListBaseComponent } from 'src/app/grid-list/container/list-base/list-base.component';
+import { ListViewComponent } from 'src/app/grid-list/presentationals/list-view/list-view.component';
 import { Routes, RouterModule } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
-import { GridListEffects } from './store/effects/grid-list.effects';
+import { GridListEffects } from 'src/app/grid-list/store/effects/grid-list.effects';
 
 const listRoutes: Routes = [
   {

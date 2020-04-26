@@ -1,5 +1,5 @@
 import { Action, createReducer, on } from '@ngrx/store';
-import * as GridListActions from '../actions/grid-list.actions';
+import * as GridListActions from 'src/app/grid-list/store/actions/grid-list.actions'
 
 export const gridListFeatureKey = 'gridList';
 
