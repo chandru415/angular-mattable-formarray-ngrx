@@ -5,6 +5,8 @@ import { ListViewComponent } from 'src/app/grid-list/presentationals/list-view/l
 import { Routes, RouterModule } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { GridListEffects } from 'src/app/grid-list/store/effects/grid-list.effects';
+import { gridListFeatureKey, gridReducer } from './store/reducers/grid-list.reducer';
+import { StoreModule } from '@ngrx/store';
 
 const listRoutes: Routes = [
   {
@@ -18,6 +20,7 @@ const listRoutes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(listRoutes),
+    StoreModule.forFeature(gridListFeatureKey, gridReducer),
     EffectsModule.forFeature([GridListEffects]),
   ]
 })
