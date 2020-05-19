@@ -7,6 +7,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { GridListEffects } from 'src/app/grid-list/store/effects/grid-list.effects';
 import { gridListFeatureKey, gridReducer } from './store/reducers/grid-list.reducer';
 import { StoreModule } from '@ngrx/store';
+import {MatTableModule} from '@angular/material/table';
 
 const listRoutes: Routes = [
   {
@@ -22,6 +23,7 @@ const listRoutes: Routes = [
     RouterModule.forChild(listRoutes),
     StoreModule.forFeature(gridListFeatureKey, gridReducer),
     EffectsModule.forFeature([GridListEffects]),
+    MatTableModule
   ]
 })
 export class GridListModule { }

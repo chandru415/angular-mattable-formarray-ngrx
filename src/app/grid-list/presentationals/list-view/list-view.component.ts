@@ -9,7 +9,9 @@ import { Employee } from 'src/app/models/employee';
 export class ListViewComponent implements OnInit {
 
   @Input() gridDataSource: Employee[];
-  
+
+  displayedColumns: string[] = ['FirstName', 'LastName', 'Email', 'Age', 'PhoneNumber'];
+
   constructor() { }
 
   ngOnInit(): void {
