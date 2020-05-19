@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Employee } from 'src/app/models/employee';
 
 @Component({
   selector: 'app-list-view',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListViewComponent implements OnInit {
 
+  @Input() gridDataSource: Employee[];
+  
   constructor() { }
 
   ngOnInit(): void {
