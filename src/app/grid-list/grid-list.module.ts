@@ -8,6 +8,9 @@ import { GridListEffects } from 'src/app/grid-list/store/effects/grid-list.effec
 import { gridListFeatureKey, gridReducer } from './store/reducers/grid-list.reducer';
 import { StoreModule } from '@ngrx/store';
 import {MatTableModule} from '@angular/material/table';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const listRoutes: Routes = [
   {
@@ -23,7 +26,11 @@ const listRoutes: Routes = [
     RouterModule.forChild(listRoutes),
     StoreModule.forFeature(gridListFeatureKey, gridReducer),
     EffectsModule.forFeature([GridListEffects]),
-    MatTableModule
+    MatTableModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule
   ]
 })
 export class GridListModule { }

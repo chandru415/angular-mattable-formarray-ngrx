@@ -1,4 +1,16 @@
 table {
-    width: 100%;
-    min-width: 900px;
+  width: 100%;
+  min-width: 900px;
+
+  tr {
+    td,
+    th {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    th {
+      text-align: center;
+    }
+  }
 }
